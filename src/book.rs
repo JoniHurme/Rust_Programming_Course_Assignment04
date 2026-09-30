@@ -19,9 +19,7 @@ impl BookLoan {
     // A summary method that borrows the loan immutably (&self) and prints
     // its title, borrower, and remaining days.
     pub fn summary(&self) {
-        println!("Loan title: {}", self.title);
-        println!("Loan borrower: {}", self.borrower);
-        println!("Loan days remaining: {}", self.days_remaining);
+        println!("{} is borrowed by {} for {} more days.", self.title, self.borrower, self.days_remaining);
     }
 
     // A pass_day method that borrows the loan mutably (&mut self) and
